@@ -1,0 +1,53 @@
+1.1
+Java - Denne kjører Java programmene, i utgangspunktet må man compelere Java coden mend javac først
+Javac - Denne kompelerer Java programmet, man får en class fill. Dette er bitecode som man gjør at man kan kjøre programmet med java
+
+1.2
+JRE - Dette er Runtime Envirement til Java. Denne gjør det mulig å kjøre Java programmer. Denne inkluderer Java Viritual Machine, som er magien bak noe av Java
+JDK - Dette er Development Kit'et til Java. Denne gjør det mulig å lage/compelere Java programmer. 
+
+1.3
+En variabel er en måte å lagre/endre en sett med data på.
+Når man lagrer data i en variabel setter man et navn, dette navnet kan man linke til en verdi (man må spesifisere hva verdien er).
+Man kan endre verdien på en variabel nesten når man vil, men man må passe på at man endrer til samme data type som variabelen er definert som.
+
+1.4
+Klasse - Dette er en måte å definere en standart for hvordan en klasse skal bli lagt. Den inneholder en del egensaper som man kan gi ett objekt. Man kan bruke construktorer for å initialisere selve objektet.
+Objekt - Dette er en samlign av variabler og fungsjoner for et objekt man har lagt med en klasse. 
+  Hvis man skal ha en bil i et programm trenger man en klasse for å si hva man vil definere bilen som, hvilke egenskaper bilen skal ha, så lager man ett objekt av der der man definerer verdier for alle variablene.
+  Objektet har også fungsjonene som kan regne ut forskjelige ting man igjen definerte i klassen, som vekten på bilen basert på matreallene man definerte.
+
+Klasser og objekter er veldig mye brukt i OOP. Det gjør at man ikke trenger å definere alle verdiene til vær nye bil, men man kan lage en blueprint (klasse) som har alt man trenger, slik at man sparrer tid når man skal lage det samme flere ganger.
+
+Dette er en klasse hvor man definerer hva en bil skal inneholde
+public class Car() {
+  public String color;
+  color(String _color) {
+    color = _color;
+  }
+}
+
+Dette er et opjekt som er en bil og har fargen rød.
+Car car1 = new Car();
+car1.color = "red";
+
+1.5
+Problemet med coden er at man ikke definerer variabelen i. Man må skrive "int i" i starten av for løkken.
+Et annet problem er at sum er definert inni selve for løkken, så den kan ikke bli skrivet ut.
+Enda et er at sum ikke er definert som noe så man kan ikke plusse det sammen med et annet tall, så vær gang man kjører gjenom løkken vil man resette sum variabelen og da ende opp med en sum + 9 = 10
+
+Her er hvordan jeg mener man kan løse problemet:
+
+class Test {
+  public static void main(String args[]) {
+
+    int sum = 0;
+
+    for (int i = 0; i < 10; i++) {
+      sum = sum+i;
+    }
+
+    System.out.println("sum is " + sum);
+
+  }
+}
