@@ -22,12 +22,17 @@ Forklar forskjellen på en klasse og et objekt. Vis gjerne et lite eksempel på 
 
 Hva er feil med denne koden?
 
-oblig1_code1.png
-Programmering
+```java
+for (i = 0; i < 10; i++) {
+  int sum;
+  sum = sum + 1;
+}
+System.out.println("Sum is " + sum);
+```
+
+## Programmering
 
 Dere skal kun benytte en teksteditor samt kommandolinja til å kompilere og kjøre koden dere lager i denne obligatoriske oppgaven. Altså ikke benytte IntelliJ eller lignende IDE'er. Dette gjør at dere får et forhold til hvordan Java-programmer kompileres før de kjører. Det er tilstrekkelig å levere .java filene dere lager, det er ikke nødvendig å levere de kompilerte .class filene.
-
-## Oppgave 2
 
 ### Oppgave 2.1
 
@@ -43,12 +48,16 @@ I denne oppgaven skal du lage to klasser, og vise at du kan lage en klasse og op
 
 a - Lag en klasse som representerer en planet. Det vi ønsker å vite om en planet er navn, radius og gravitasjon (den skal altså ha disse instansvariablene). En planet skal kunne opprettes ved hjelp av en konstruktør på følgende måte:
 
-oblig1_code2
+```java
+Planet mars = new Planet("Mars, 3389.5, 3.711);
+```
 
 Husk å gjøre instansvariablene private, og lag get- og set-metoder for disse. Da får vi en innkapsling (ett av prinsippene i OOP) av disse.
 
 b - En klasse kalt "Oppgave2_3.java" som benytter Planet-klassen du akkurat har laget. Denne må ha en main-metode slik at du får kjørt den. Du skal her instansierernoen Planet-objekter og deretter skrive ut informasjon om disse til terminalen på følgende måte:
+```
 Planeten Mars har en radius på 3389.5 km og en gravitasjon på 3.711 m/s2
+```
 
 ## Bousoppgaver
 ### Bonusoppgave 3.1
@@ -58,7 +67,13 @@ Lag en klasse med en main-metode som tar input fra terminalen. Det enkleste er n
 
 En kjøring av programmet i terminalen vil se omtrent slik ut:
 
-oblig1_code3.png
+```
+Skriv inn navn på planeten: Saturn
+Skriv inn radius på planeten: 58232
+Skriv inn gravitasjonen på planeten: 10.44
+
+Saturn har en ratius på 58232.0 km og en gravitasjon på 10.44 m/s^2
+```
 
 ### Bonusoppgave 3.2
 
