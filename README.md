@@ -49,7 +49,7 @@ I denne oppgaven skal du lage to klasser, og vise at du kan lage en klasse og op
 a - Lag en klasse som representerer en planet. Det vi ønsker å vite om en planet er navn, radius og gravitasjon (den skal altså ha disse instansvariablene). En planet skal kunne opprettes ved hjelp av en konstruktør på følgende måte:
 
 ```java
-Planet mars = new Planet("Mars, 3389.5, 3.711);
+Planet mars = new Planet("Mars", 3389.5, 3.711);
 ```
 
 Husk å gjøre instansvariablene private, og lag get- og set-metoder for disse. Da får vi en innkapsling (ett av prinsippene i OOP) av disse.
